@@ -20,7 +20,7 @@ func Set(key GameSceneKey, scene GameScene) {
 }
 
 // SwitchWith changes the current scene to the scene with the given key.
-// It also recieves a function which allows you to access the new scene.
+// It also receives a function which allows you to access the new scene.
 func SwitchWith(key GameSceneKey, withFunc func(GameScene)) {
 	scene := scenes[key]
 	if scene == nil {
